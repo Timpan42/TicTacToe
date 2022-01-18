@@ -1,3 +1,5 @@
+import javax.swing.*;
+
 public class gubbe {
     public static void main(String args[]){
     /* början fråga efter ett ord / ge ett random ord */
@@ -8,14 +10,15 @@ public class gubbe {
     /* della upp ordet var för sig */
     String[] leter = wordlist.split("");
 
+    /* gör boksäverna till ett tall*/
 
-    /* vissa ordet för spelaren i form av _ _ _ */
+    /* vissa ordet för spelaren i form av _ _ _***** */
 
-
-
-    /* fråga spelare efter ett bokstav*/
+    /* fråga spelare efter en bokstav*/
+        String QuestionWord = JOptionPane.showInputDialog("Put your bokstav in");
 
     /* spara bokstav*/
+
 
     /* kolar vilken bokstaven är*/
 
