@@ -15,12 +15,18 @@ public class gubbe {
     /* vissa ordet för spelaren i form av _ _ _***** */
 
     /* fråga spelare efter en bokstav*/
-        String QuestionWord = JOptionPane.showInputDialog("Put your bokstav in");
-
     /* spara bokstav*/
 
+    for (int i=0; i <= leter.length; i++) {
+        String QuestionWord = JOptionPane.showInputDialog("Put your letter in");
+        String lowWord = QuestionWord.toLowerCase();
+        if (lowWord == leter[i]){
+            System.out.print("true" + leter[i]);
+        }
 
-    /* kolar vilken bokstaven är*/
+    }
+
+        /* kolar vilken bokstaven är*/
 
     /* om bokstav är rätt så vissas bokstaven av ordet. om fel, rita */
 
