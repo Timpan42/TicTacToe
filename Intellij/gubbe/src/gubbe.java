@@ -26,7 +26,7 @@ public class gubbe {
 
     }
 
-        /* kolar vilken bokstaven är*/
+        /* kolar vilken bokstaven är sak*/
 
     /* om bokstav är rätt så vissas bokstaven av ordet. om fel, rita */
 
