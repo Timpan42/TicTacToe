@@ -20,10 +20,12 @@ public class gubbe {
     for (int i=0; i <= leter.length; i++) {
         String QuestionWord = JOptionPane.showInputDialog("Put your letter in");
         String lowWord = QuestionWord.toLowerCase();
-        if (lowWord == leter[i]){
-            System.out.print("true" + leter[i]);
+        if (lowWord.equals(leter[i])){
+            System.out.print(" true "+ leter[i] + "");
         }
-
+        else{
+            System.out.print(" your moder " + "");
+        }
     }
 
         /* kolar vilken bokstaven är sak*/
