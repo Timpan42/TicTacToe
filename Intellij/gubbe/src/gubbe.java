@@ -5,28 +5,31 @@ public class gubbe {
     /* början fråga efter ett ord / ge ett random ord */
     /* spara ordet */
     String wordlist = "word";
-
+    int trys = 0;
+    int t = 0;
 
     /* della upp ordet var för sig */
     String[] leter = wordlist.split("");
-
-    /* gör boksäverna till ett tall*/
+    String[] under = new String[leter.length];
 
     /* vissa ordet för spelaren i form av _ _ _***** */
-
+    for (int u = 0; u < leter.length; u++){
+         under[u] = "_";
+    }
     /* fråga spelare efter en bokstav*/
     /* spara bokstav*/
+     for () {
+         String QuestionWord = JOptionPane.showInputDialog("Put your letter in");
+         String lowWord = QuestionWord.toLowerCase();
+         for (int i = 0; i < leter.length; i++) {
+             if (lowWord.equals(leter[i])) {
+                 System.out.print(i + " " + leter[i] + " ");
+             } else {
+                 System.out.print(under[i] + " ");
+             }
+         }
 
-    for (int i=0; i <= leter.length; i++) {
-        String QuestionWord = JOptionPane.showInputDialog("Put your letter in");
-        String lowWord = QuestionWord.toLowerCase();
-        if (lowWord.equals(leter[i])){
-            System.out.print(" true "+ leter[i] + "");
-        }
-        else{
-            System.out.print(" your moder " + "");
-        }
-    }
+     }
 
         /* kolar vilken bokstaven är sak*/
 
