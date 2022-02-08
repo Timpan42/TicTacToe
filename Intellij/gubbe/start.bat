@@ -1,1 +1,1 @@
-cmd /k java -jar dinfil.jar
+cmd /k java -jar gubbe.jar
