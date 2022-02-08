@@ -4,7 +4,7 @@ public class gubbe {
     public static void main(String args[]){
     /* början fråga efter ett ord / ge ett random ord */
     /* spara ordet */
-    String wordlist = "word";
+    String wordlist = JOptionPane.showInputDialog("what is your word");
     int trys = 0;
     int t = 0;
 
@@ -18,7 +18,6 @@ public class gubbe {
     }
     /* fråga spelare efter en bokstav*/
     /* spara bokstav*/
-     for () {
          String QuestionWord = JOptionPane.showInputDialog("Put your letter in");
          String lowWord = QuestionWord.toLowerCase();
          for (int i = 0; i < leter.length; i++) {
@@ -29,7 +28,7 @@ public class gubbe {
              }
          }
 
-     }
+
 
         /* kolar vilken bokstaven är sak*/
 
