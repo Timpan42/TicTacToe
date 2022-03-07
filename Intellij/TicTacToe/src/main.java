@@ -81,5 +81,88 @@ public class main {
             System.out.println();
         }
     }
+
+    public  static char playerWon(char[][] bord){
+        for (int i=0; i< bord.length; i++){
+         boolean ix_ledd= true;
+         char value = bord[i][0];
+         if (value == '-'){
+             ix_ledd = false;
+         } else {
+             for (int j=1; j< bord.length; j++) {
+                 if (bord[i][j] != value) {
+                     ix_ledd = false;
+                     break;
+                     }
+                }
+            }
+         if (ix_ledd){
+             return value;
+         }
+        }
+
+        for (int j=0; j< bord.length; j++){
+            boolean iy_ledd= true;
+            char value = bord[0][j];
+            if (value == '-'){
+                iy_ledd = false;
+            } else {
+                for (int i=1; i< bord.length; i++) {
+                    if (bord[i][j] != value) {
+                        iy_ledd = false;
+                        break;
+                    }
+                }
+            }
+            if (iy_ledd){
+                return value;
+            }
+        }
+        boolean diagonal1 = true;
+        char value1 =bord[0][0];
+
+        if (value1 == '-'){
+            diagonal1 = false;
+        } else {
+            for (int i = 1; i<bord.length; i++){
+                if (bord[i][i] != value1){
+                    diagonal1 = false;
+                    break;
+                }
+            }
+        }
+        if (diagonal1){
+            return value1;
+        }
+
+        boolean diagonal2 = true;
+        char value2 =bord[0][bord.length-1];
+
+        if (value2 == '-'){
+            diagonal2 = false;
+        } else {
+            for (int i = 1; i<bord.length; i++){
+                if (bord[i][bord.length-1-i] != value2){
+                    diagonal2 = false;
+                    break;
+                }
+            }
+        }
+        if (diagonal2){
+            return value2;
+        }
+        return ' ';
+    }
+
+    public static boolean gameTie(char[][] bord){
+        for (int i = 0; i < bord.length; i++){
+            for (int j = 0; j < bord.length; j++){
+                if (bord[i][j] =='-'){
+                    return false;
+                }
+            }
+        }
+        return true;
+    }
 }
 
